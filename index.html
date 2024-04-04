@@ -1,8 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Documenxt</title>
+        <title>Calculator BMI</title>
+        <link rel="stylesheet" href="style.css">
     </head>
+    <body>
+        <header>
+            <h1>Calculator BMI - Yama</h1>
+        </header>
+        <main>
+            <div class="main-container">
+                <!--Form Display-->
+                <div class="container-item">
+                    <h2>Form BMI</h2>
+                    <p>The ideal body weight is everyone's dream. Not only having a body shape that supports appearance, ideal body weight also indicates a healthy body condition. How about you? Come on, calculate now on the BMI calculator.</p>
+                    <section class="container-form">
+                        <div>
+                            <label>Jenis Kelamin</label><br />
+                            <input type="radio" name="sex" id="sex-man">
+                            <label for="sex-man">Laki-Laki</label>
+                            <input type="radio" name="sex" id="sex-woman">
+                            <label for="sex-woman">Perempuan</label>
+                        </div>
+                        <div>
+                            <label>Berat Badan (kg)</label><br />
+                            <input type="number" class="form-item">
+                        </div>
+                        <button type="button" id="calculate-button">Hitung BMI</button>
+                        <button type="button">Reset</button>
+                        <p><ol>Feature advantage
+                            <li>Calculating weight</li>
+                            <li>Determine the ideal weight category or not</li>
+                            <li>Preparing for a weight loss program</li></ol>
+                            
+                            This calculator should only be used by adults (pregnant or nursing women should not rely on this BMI reading) and no action should be taken based on its value other than consulting a qualified person such as a doctor.
+                            
+                            
+                            The calculator will give you an idea of how your weight compares to the general value. Body Mass Index (or BMI) is calculated as your weight (in kilograms) divided by the square of your height (in meters) or BMI = Kg/M2.</p>
+                    </section>
+                </div>
+
+                <!--Result Display-->
+                <div class="container-item">
+                    <h2>Result</h2>
+                    <section class="container-result">
+                        <h4>Berat Badan Lebih</h4>
+                        <h1>0</h1>
+                        <h4>Anda Memiliki Berat Badan Berlebih</h4>
+                        <button type="button">Download Hasil BMI</button>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+
+
+        <script src="js/script.js"></script>
+    </body>
 </html>
